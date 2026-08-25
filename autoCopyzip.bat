@@ -13,7 +13,7 @@ ECHO PATH
 ECHO waiting for insertion cellphone... 
 adb wait-for-device    
 @REM circulation install this catalogue's APP 
-FOR %%i IN (*.obb) DO (   
+FOR %%i IN (*.zip) DO (   
     ECHO copying:%%i  
     adb push "%%i" /sdcard/install
     )  
